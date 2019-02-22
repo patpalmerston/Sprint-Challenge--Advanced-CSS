@@ -164,11 +164,11 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background-color: #F6F6F6;
-  margin: 0 auto;
-  height: 100%;
+  margin: 0px auto;
+  height: 10rem;
 }
 .top-header nav {
   width: 100%;
