@@ -1,1 +1,30 @@
 // Mixins Here
+
+@mobile: ~'( max-width: 500px )';
+
+.custom-layout(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.test() {
+  border: 2px solid red;
+}
+
+.custom-button(@width: 100px, @bg-color:@ebony-clay, @font-color: white) {
+  background-color: @bg-color;
+  color: @font-color;
+  margin: 10px 0px 20px;
+  cursor: pointer;
+  padding: 10px 5%;
+  width: @width;
+  font-size: 1.5rem;
+  border-radius: 10px; // rounds the object
+
+    &:hover {
+      background-color: @font-color;
+      color: @bg-color;
+    }
+}
+
